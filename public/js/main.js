@@ -1,4 +1,4 @@
-angular.module('alurapic', ['minhasDiretivas', 'ngAnimate', 'ngRoute'])
+angular.module('alurapic', ['minhasDiretivas', 'ngAnimate', 'ngRoute', 'meusServicos'])
 .config(function($routeProvider, $locationProvider) {
 
 	//Esse artefato (classe) serve para tirar o símbolo '#' de cada rota do angularJs.
