@@ -6,6 +6,9 @@ angular.module('alurapic').controller('FotosController', function($scope, $http)
 	}).catch(function(error) {
 		console.log(error);
 	});*/
+	$scope.fotos = [];
+	$scope.filtro = '';
+
 	$http.get('v1/fotos')
 	.success(function(fotos) {
 		$scope.fotos = fotos;
